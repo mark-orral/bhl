@@ -1,0 +1,26 @@
+@import "@/styles/global/variables";
+
+.component {
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+
+  @media (width >= $screen-medium-small) {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  > div {
+    @media (width >= $screen-medium-small) {
+      flex: 1 1 auto;
+    }
+  }
+  > button {
+    @media (width < $screen-medium-small) {
+      display: none;
+    }
+    @media (width >= $screen-medium-small) {
+      margin-left: 4rem;
+    }
+  }
+}

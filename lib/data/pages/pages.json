@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "description": "",
+    "components": [],
+    "slug": "/",
+    "seo": {
+      "title": "The Blackhorse Collective - A thriving creative community",
+      "description": "Supporting creative and digital innovation, inclusion, expansion and growth for businesses and individuals wanting to excel in the creative sector.",
+      "canonical": "https://blackhorselane.co.uk",
+      "robots": {
+        "index": "index",
+        "follow": "follow"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "title": "Community",
+    "slug": "community",
+    "description": "",
+    "components": [],
+    "seo": {
+      "title": "Community",
+      "description": "This is the Blackhorse Lane community",
+      "canonical": "https://blackhorselane.co.uk/community",
+      "robots": {
+        "index": "index",
+        "follow": "follow"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Directory",
+    "slug": "directory",
+    "description": "",
+    "components": [],
+    "seo": {
+      "title": "Directory",
+      "description": "This is the Blackhorse Lane business directory",
+      "canonical": "https://blackhorselane.co.uk/directory",
+      "robots": {
+        "index": "index",
+        "follow": "follow"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "Spaces",
+    "slug": "spaces",
+    "description": "",
+    "components": [],
+    "seo": {
+      "title": "Spaces",
+      "description": "This is the Blackhorse Lane spaces",
+      "canonical": "https://blackhorselane.co.uk/spaces",
+      "robots": {
+        "index": "index",
+        "follow": "follow"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Skills & Training",
+    "slug": "skills-and-training",
+    "description": "",
+    "components": [],
+    "seo": {
+      "title": "Skills & Training",
+      "description": "This is the Blackhorse Lane skills and training",
+      "canonical": "https://blackhorselane.co.uk/skills-and-training",
+      "robots": {
+        "index": "index",
+        "follow": "follow"
+      }
+    }
+  }
+]

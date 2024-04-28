@@ -1,0 +1,102 @@
+@import "@/styles/global/variables";
+
+.component {
+  padding: 1.2rem 1rem;
+
+  @media (width > $screen-medium-small) {
+    padding: 12rem 1rem;
+  }
+}
+
+.card {
+  border: 1px solid var(--black);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (width <= $screen-medium-small) {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  @media (width > $screen-medium-small) {
+    flex-direction: row;
+  }
+  &_image {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    width: 100%;
+
+    @media (width <= $screen-medium-small) {
+      padding-top: 100%;
+    }
+    @media (width > $screen-medium-small) {
+      height: 40rem;
+      width: 50%;
+    }
+  }
+  &_info {
+    padding: 1rem;
+    position: relative;
+    background-color: var(--green);
+
+    @media (width > $screen-medium-small) {
+      width: 50%;
+      padding: 2rem 3rem;
+    }
+    &_header {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-family: var(--autoscape);
+      font-size: 1rem;
+
+      @media (width > $screen-medium-small) {
+        margin-bottom: 3rem;
+      }
+    }
+    &_heading,
+    &_description {
+      width: 80%;
+    }
+    &_heading {
+      font-size: 2.5rem;
+
+      @media (width > $screen-medium-small) {
+        width: clamp(31.4rem, 82%, 33rem);
+        font-size: 4rem;
+      }
+    }
+    &_description {
+      line-height: 1.3;
+      font-size: 1.2rem;
+
+      @media (width > $screen-medium-small) {
+        width: clamp(26rem, 68%, 33rem);
+        position: absolute;
+        bottom: 3rem;
+        font-size: 1.4rem;
+      }
+    }
+    &_link {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      svg {
+        position: absolute;
+        bottom: 1.2rem;
+        right: 1.2rem;
+
+        @media (width > $screen-medium-small) {
+          bottom: 3rem;
+          right: 3rem;
+        }
+      }
+    }
+  }
+}

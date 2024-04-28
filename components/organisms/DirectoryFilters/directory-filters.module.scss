@@ -1,0 +1,34 @@
+@import "@/styles/global/variables";
+
+.component {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+  z-index: 1;
+
+  @media (width < $screen-medium-small) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  @media (width >= $screen-medium-small) {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  > div {
+    @media (width >= $screen-medium-small) {
+      max-width: 28.5rem;
+    }
+  }
+  > form {
+    // max-width: 28.5rem;
+
+    @media (width < $screen-medium-small) {
+      margin-bottom: 1.5rem;
+    }
+    @media (width >= $screen-medium-small) {
+      max-width: 17.5rem;
+      margin-left: 4rem;
+    }
+  }
+}

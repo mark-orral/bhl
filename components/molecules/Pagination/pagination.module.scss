@@ -1,0 +1,66 @@
+@import "@/styles/global/variables";
+
+.component {
+  display: flex;
+  justify-content: center;
+
+  @media (width > $screen-medium-small) {
+    font-size: 2rem;
+  }
+  ul {
+    display: inline-flex;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-right: 1rem;
+
+      @media (width > $screen-medium-small) {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1.5rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a,
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+
+    @media (width > $screen-medium-small) {
+      height: 4rem;
+      width: 4rem;
+    }
+    &:hover,
+    &.active {
+      background-color: var(--black);
+      color: var(--beige);
+    }
+    &.prev,
+    &.next {
+      font-size: 2.4rem;
+
+      &,
+      &:hover {
+        background-color: transparent;
+        color: var(--black);
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

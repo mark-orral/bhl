@@ -1,0 +1,17 @@
+.alphabet_filter {
+  align-items: center;
+  position: relative;
+  top: 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: var(--autoscape);
+  font-size: 1rem;
+  cursor: pointer;
+  .alphabet_filter_letter {
+    padding: 0.5rem;
+    &.active {
+      background-color: var(--yellow);
+    }
+  }
+}

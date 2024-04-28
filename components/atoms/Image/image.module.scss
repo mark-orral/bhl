@@ -1,0 +1,10 @@
+.fit {
+  &_cover {
+    object-fit: cover;
+  }
+}
+.position {
+  &_center_center {
+    object-position: center center;
+  }
+}

@@ -1,0 +1,42 @@
+@import "@/styles/global/variables";
+
+.component {
+  margin: 0 auto;
+  max-width: 153.6rem;
+
+  &_type {
+    &_content {
+      max-width: 94rem;
+    }
+    &_filter {
+      max-width: 64rem;
+      padding: 5.2rem 1rem 0;
+      margin-bottom: 4.5rem;
+
+      @media (width > $screen-medium-small) {
+        max-width: 71rem;
+      }
+      @media (width > $screen-medium-large) {
+        padding: 5rem 1rem 0;
+        margin-bottom: 8rem;
+      }
+    }
+    &_single {
+      max-width: 96rem;
+      padding: 8rem 1rem 0;
+
+      &_text {
+        max-width: 62.5rem;
+        padding: 0 1rem;
+      }
+      &,
+      &_text {
+        margin-bottom: 2.5rem;
+
+        @media (width > $screen-medium-small) {
+          margin-bottom: 6rem;
+        }
+      }
+    }
+  }
+}

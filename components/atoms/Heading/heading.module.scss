@@ -1,0 +1,17 @@
+@import "@/styles/global/variables";
+
+.component {
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-size: 2.5rem;
+
+  // max-width: 45rem;
+  // line-height: 1.2;
+
+  @media (width >= $screen-medium-small) {
+    font-size: 4.6rem;
+  }
+  &_center {
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+@import "@/styles/global/variables";
+
+.component {
+  display: block;
+  padding: 0 1rem 0;
+
+  .container {
+    padding: 0;
+
+    &.flex {
+      @media (width >= $screen-medium-small) {
+        display: flex;
+      }
+    }
+    &.split {
+      @media (width >= $screen-medium-small) {
+        .col {
+          &:first-child,
+          &:last-child {
+            flex: 1 1 50%;
+          }
+        }
+      }
+    }
+    &.border {
+      padding: 2.5rem 0 0;
+      border-top: 1px solid var(--black);
+
+      @media (width >= $screen-medium-small) {
+        border-top: 2px solid var(--black);
+      }
+    }
+    .col {
+      &:first-child {
+        flex: 1 1 60%;
+
+        h2 {
+          @media (width >= $screen-medium) {
+            margin-bottom: 3rem;
+          }
+        }
+        p {
+          font-family: var(--neue-montreal-book);
+          font-size: 1.4rem;
+          line-height: 1.5;
+
+          @media (width >= $screen-medium-small) {
+            font-size: 2rem;
+          }
+          @media (width >= $screen-medium) {
+            max-width: 70%;
+          }
+        }
+      }
+      &:last-child {
+        flex: 1 1 40%;
+      }
+    }
+  }
+}

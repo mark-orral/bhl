@@ -1,0 +1,51 @@
+@import "@/styles/global/variables";
+.component {
+  background-color: var(--black);
+  padding: 3rem 1rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    @media (width < $screen-medium) {
+      flex-direction: column;
+    }
+    .image_container {
+      position: relative;
+      .image_text_container {
+        margin: 0 0 0 1rem;
+        .image_text,
+        .image_category {
+          position: absolute;
+          background: var(--beige);
+        }
+        .image_text {
+          padding: 1rem;
+          height: 100px;
+          bottom: 15px;
+          width: 85%;
+          font-size: 2.5rem;
+        }
+        .image_category {
+          text-transform: uppercase;
+          padding: 0.5rem;
+          text-align: center;
+          rotate: 90deg;
+          font-size: 1rem;
+          bottom: 55px;
+          width: 100px;
+          right: -30px;
+        }
+      }
+    }
+  }
+  @media (width < $screen-medium-small) {
+    padding: 6rem 1rem;
+  }
+}
+
+.icon {
+  position: absolute;
+  bottom: 20px;
+  right: 45px;
+}

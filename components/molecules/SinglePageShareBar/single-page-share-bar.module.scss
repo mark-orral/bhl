@@ -1,0 +1,43 @@
+@import "@/styles/global/variables";
+
+.component {
+  text-transform: uppercase;
+  font-family: var(--autoscape);
+  font-size: 1rem;
+  .share {
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      transform: translate(-41%, -120%);
+      width: 200px;
+      padding: 10px;
+      border-radius: 10px;
+      background: #000;
+      color: #fff;
+      text-align: center;
+
+      display: none;
+    }
+  }
+  .share:hover:before {
+    display: block;
+  }
+
+  @media (width >= $screen-medium-small) {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media (width >= $screen-medium) {
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}

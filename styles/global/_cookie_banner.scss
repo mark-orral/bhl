@@ -1,0 +1,35 @@
+:root {
+  /* COLORS */
+  --cookie-consent-banner-colors-primary: #323232;
+  --cookie-consent-banner-colors-primary-border: #323232;
+  --cookie-consent-banner-colors-primary-content: #fff;
+  --cookie-consent-banner-colors-secondary: #323232;
+  --cookie-consent-banner-colors-secondary-border: #323232;
+  --cookie-consent-banner-colors-secondary-content: #fff;
+  --cookie-consent-banner-colors-background-body: rgba(255, 255, 255, 0.95);
+  --cookie-consent-banner-colors-text: #323232;
+
+  /* BORDER-RADIUS */
+  --cookie-consent-banner-border-radius-buttons: 1.5rem;
+  --cookie-consent-banner-border-radius-body: 0;
+
+  /* SPACINGS */
+  --cookie-consent-banner-spacings-container-padding-top: 1.5rem;
+  --cookie-consent-banner-spacings-container-padding-left: 1.5rem;
+  --cookie-consent-banner-spacings-container-padding-bottom: 1.5rem;
+  --cookie-consent-banner-spacings-container-padding-right: 1.5rem;
+
+  --cookie-consent-banner-spacings-body-padding-top: 1rem;
+  --cookie-consent-banner-spacings-body-padding-left: 3rem;
+  --cookie-consent-banner-spacings-body-padding-bottom: 2rem;
+  --cookie-consent-banner-spacings-body-padding-right: 3rem;
+
+  /* Z-INDEX */
+  --cookie-consent-banner-z-index-container: 99;
+
+  /* FONTS */
+  --cookie-consent-banner-font-family-headline: var(--neue-montreal-medium);
+  --cookie-consent-banner-font-size-headline: 3rem;
+  --cookie-consent-banner-font-family-body: inherit;
+  --cookie-consent-banner-font-size-body: 1.4rem;
+}

@@ -1,0 +1,33 @@
+@import "@/styles/global/variables";
+
+.component {
+  background-color: var(--blue);
+  padding: 10rem 2rem;
+  text-align: center;
+
+  &_quote {
+    max-width: 90rem;
+    margin: 0 auto 4rem;
+    line-height: 1.1;
+    font-size: 3rem;
+
+    @media (width > $screen-medium-small) {
+      font-size: 4rem;
+    }
+  }
+  &_author {
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-family: var(--autoscape);
+    font-size: 1rem;
+
+    span {
+      display: block;
+    }
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

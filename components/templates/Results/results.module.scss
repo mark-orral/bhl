@@ -1,0 +1,50 @@
+@import "@/styles/global/variables";
+
+.component {
+  margin-bottom: 4rem;
+
+  @media (width > $screen-medium-large) {
+    margin-bottom: 8rem;
+  }
+  &_loading_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+  }
+  &_grouping {
+    margin-bottom: 4rem;
+  }
+  &_list {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+
+    @media (width < $screen-small) {
+      justify-items: center;
+    }
+    @media (width >= $screen-small) {
+      grid-template-columns: calc(50% - 0.75rem) calc(50% - 0.75rem);
+    }
+    @media (width > $screen-medium-small) {
+      grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+      column-gap: 2rem;
+      row-gap: 2rem;
+    }
+  }
+  &_list_related {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50px;
+    margin-right: -50px;
+    @media (width <= $screen-medium) {
+      justify-items: center;
+      flex-direction: column;
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+}

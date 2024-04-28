@@ -1,0 +1,122 @@
+@import "@/styles/global/variables";
+
+.component {
+  padding: 2rem;
+  background-color: var(--green-dark);
+  color: var(--beige);
+
+  @media (width > $screen-medium-small) {
+    padding: 6rem 3rem 7.5rem;
+  }
+  &_heading {
+    margin-bottom: 4rem;
+    text-align: center;
+    @media (width > $screen-medium-small) {
+      margin-bottom: 9.5rem;
+    }
+  }
+  &_heading_content {
+    text-align: left;
+  }
+  &_description {
+    a {
+      color: rgb(220, 219, 209);
+    }
+  }
+
+  &_form {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &_field {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 0;
+      color: var(--white);
+      border-bottom: 1px solid var(--beige);
+      transition: all 0.25s ease-in-out;
+      padding: 0.5rem 0;
+      margin-bottom: 3rem;
+      @media (width <= $screen-medium-small) {
+        width: calc(50% - 0.75rem);
+      }
+      &:nth-child(3) {
+        width: 100%;
+      }
+      &::placeholder {
+        color: var(--white);
+        opacity: 0.8;
+      }
+      &:active,
+      &:focus {
+        border-color: var(--white);
+      }
+      &_alert {
+        border-color: red;
+      }
+    }
+    &_button {
+      background-color: var(--white);
+      border-color: var(--white);
+      color: var(--green-dark);
+      @media (width > $screen-medium-small) {
+        margin: 0 !important;
+      }
+    }
+    &_button_business {
+      color: var(--grey-dark);
+    }
+    &_button_space {
+      color: var(--pink);
+    }
+    &_field_content {
+      margin-bottom: unset;
+      @media (width <= $screen-medium-small) {
+        padding: 0.5rem 0;
+        margin-bottom: 3rem;
+      }
+      &:nth-child(3) {
+        @media (width > $screen-medium-small) {
+          width: clamp(28rem, 40%, 35rem);
+        }
+      }
+    }
+  }
+  &_form_content {
+    flex-wrap: unset;
+    justify-content: unset;
+    @media (width <= $screen-medium-small) {
+      flex-wrap: wrap;
+    }
+    @media (width > $screen-medium-small) {
+      justify-content: space-between;
+    }
+  }
+}
+.component_business {
+  background-color: var(--grey-dark);
+  color: var(--white);
+}
+.component_space {
+  background-color: var(--pink);
+  color: var(--white);
+}
+.message {
+  display: flex;
+  align-items: center;
+  line-height: 3.9rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  > * {
+    width: 100%;
+    text-align: center;
+  }
+  &_success {
+    color: var(--white);
+  }
+  &_error {
+    color: red;
+  }
+}

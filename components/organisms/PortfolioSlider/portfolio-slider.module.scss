@@ -1,0 +1,45 @@
+@import "@/styles/global/variables";
+
+.component {
+  padding: 0 0 6rem;
+
+  &_slider {
+    margin-bottom: 4rem;
+    position: relative;
+
+    @media (width <= $screen-xsmall) {
+      padding-right: 4rem;
+    }
+    &_small {
+      max-width: 110rem;
+    }
+    &_large {
+      max-width: 250rem;
+    }
+  }
+
+  &_slides {
+    height: 40rem;
+    width: 25rem;
+
+    &,
+    &:last-child {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+    @media (width >= $screen-medium-small) {
+      height: 41.5rem;
+      width: 27.5rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &,
+      &:last-child {
+        margin-right: 1.25rem;
+        margin-left: 1.25rem;
+      }
+    }
+  }
+}

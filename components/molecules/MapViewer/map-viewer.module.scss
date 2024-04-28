@@ -1,0 +1,42 @@
+@import "@/styles/global/variables";
+
+.component {
+  margin-bottom: 3.5rem;
+  line-height: 0;
+
+  &_button {
+    width: auto;
+    line-height: 0;
+    font-family: var(--autoscape);
+  }
+}
+.map_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-light);
+  margin-bottom: 2rem;
+  height: 40rem;
+  width: 100%;
+  opacity: 1;
+  animation: 0.5s fadein;
+
+  @media (width >= $screen-medium-small) {
+    height: 50rem;
+  }
+}
+.button_container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

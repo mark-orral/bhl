@@ -1,0 +1,23 @@
+.component {
+  background: #fff;
+  padding: 1.1rem 2rem 1.1rem 5rem;
+  text-transform: uppercase;
+  font-family: var(--autoscape);
+  font-size: 1.2rem;
+  position: absolute;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 1.5rem;
+    width: 1.3rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 1.5rem;
+    background-image: url("/images/icons/arrow-right-small.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}

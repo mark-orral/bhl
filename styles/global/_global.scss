@@ -1,0 +1,30 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #dcdbd1;
+
+  @media (width <= $screen-medium-large) {
+    &.fixed {
+      position: fixed;
+    }
+  }
+}
+* {
+  box-sizing: border-box;
+}
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  @media (width <= $screen-medium-large) {
+    margin-top: 5.4rem;
+  }
+}

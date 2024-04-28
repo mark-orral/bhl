@@ -1,0 +1,49 @@
+.component {
+  height: 4.2rem;
+  width: 100%;
+  outline: none;
+  background-color: var(--black);
+  color: var(--beige);
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  cursor: pointer;
+
+  font-family: var(--autoscape);
+  font-size: 1.2rem;
+
+  &_input {
+    height: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  &_menu {
+    background-color: var(--white);
+    width: 100%;
+    max-height: 15rem;
+    overflow: auto;
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+
+    &_item {
+      color: var(--black);
+      padding: 1.3rem;
+      cursor: pointer;
+
+      &:hover,
+      &_active {
+        background-color: var(--black);
+        color: var(--beige);
+      }
+    }
+  }
+}
+.icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  right: 1.5rem;
+}

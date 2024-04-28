@@ -1,0 +1,22 @@
+@import "@/styles/global/variables";
+
+.element {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  font-family: var(--neue-montreal-book);
+  font-size: 1.4rem;
+  line-height: 1.5;
+
+  @media (width >= $screen-medium-small) {
+    gap: 3rem;
+    font-size: 2rem;
+  }
+
+  li {
+    flex: 0 0 calc(50% - 1.5rem);
+    flex-direction: column;
+    display: flex;
+  }
+}

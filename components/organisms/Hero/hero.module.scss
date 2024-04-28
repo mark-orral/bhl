@@ -1,0 +1,102 @@
+@import "@/styles/global/variables";
+
+.component {
+  text-align: center;
+
+  &_row {
+    border-bottom: 1px solid var(--black);
+
+    @media (width <= $screen-medium-large) {
+      padding: 0 1rem;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+    @media (width > $screen-medium-large) {
+      display: flex;
+
+      &:nth-child(2) {
+        position: relative;
+
+        &::after {
+          content: "\00a9"" Blackhorse Collective \2122""  WF CEZ  " "\2192""  Est. 2022";
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          transform: rotate(90deg);
+          transform-origin: bottom right;
+          color: var(--black);
+          position: absolute;
+          right: 2rem;
+          bottom: 4rem;
+        }
+      }
+    }
+  }
+  &_container {
+    width: 100%;
+
+    @media (width > $screen-medium-large) {
+      display: flex;
+
+      &::before {
+        display: block;
+        content: "";
+        flex: 0 0 19.5%;
+      }
+      &::after {
+        display: block;
+        content: "";
+        flex: 0 0 19.5%;
+      }
+    }
+    &_inner {
+      overflow: hidden;
+      width: 100%;
+      border-left: 1px solid var(--black);
+      border-right: 1px solid var(--black);
+      position: relative;
+
+      @media (width > $screen-medium-large) {
+        flex: 1 1 auto;
+      }
+    }
+  }
+  &_player {
+    @media (width <= $screen-small) {
+      padding-top: 34rem;
+
+      video {
+        height: 100%;
+        width: 205%;
+        position: absolute;
+        top: 0;
+        left: -52.5%;
+      }
+    }
+  }
+  &_ticker {
+    display: flex;
+    align-items: center;
+    height: 15rem;
+
+    @media (width > $screen-medium-small) {
+      height: 30rem;
+    }
+    &_item {
+      width: 100%;
+      margin-right: 2rem;
+      letter-spacing: -0.15rem;
+
+      > * {
+        font-size: 5.2rem;
+        margin: 0;
+
+        @media (width > $screen-medium-small) {
+          letter-spacing: -0.5rem;
+          font-size: 16rem;
+        }
+      }
+    }
+  }
+}

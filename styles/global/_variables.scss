@@ -1,0 +1,13 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$screen-xsmall: em(414);
+$screen-small: em(640);
+$screen-medium-small: em(768);
+$screen-medium: em(960);
+$screen-medium-large: em(1280);
+$screen-large: em(1366);
+$screen-xlarge: em(1920);

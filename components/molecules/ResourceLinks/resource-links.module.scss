@@ -1,0 +1,42 @@
+@import "@/styles/global/variables";
+
+.element {
+  padding-top: 4rem;
+
+  li {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .button {
+    display: block;
+    position: relative;
+    padding: 1.4rem 1.75rem;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    border: 2px solid var(--black);
+
+    &:after {
+      display: block;
+      content: "";
+      height: 100%;
+      width: 4.25rem;
+      position: absolute;
+      right: -0.6px;
+      top: 0;
+      bottom: 0;
+      border-left: 2px solid var(--black);
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      background-color: var(--beige);
+      background-image: url("/images/icons/external-link.svg");
+      background-size: 38%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
